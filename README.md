@@ -7,7 +7,7 @@
 #### 安装教程
 
 ```
-1.  npm insatll -D babel-plugin-transform-vue-template
+1.  git clone https://github.com/liangdiyuan/babel-plugin-transform-vue-template.git
 ```
 
 #### 使用说明
