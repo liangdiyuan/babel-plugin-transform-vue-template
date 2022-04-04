@@ -47,4 +47,9 @@ new Vue({
   `
 });
 ```
-
+自定义魔法注释
+```
+ {
+    plugins: [[babelPluginTransformVueTemplate, {flagStr: "自定义魔法注释"}]],
+  };
+```
