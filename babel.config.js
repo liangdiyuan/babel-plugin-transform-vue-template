@@ -1,4 +1,4 @@
-const babelPluginTransformVueTemplate = require("./lib/indes");
+const babelPluginTransformVueTemplate = require("babel-plugin-transform-vue-inline-template-next");
 
 module.exports = function (api) {
   api.cache(true);
