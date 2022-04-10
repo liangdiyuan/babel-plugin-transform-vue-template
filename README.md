@@ -1,4 +1,4 @@
-# babel-plugin-transform-vue-template
+# babel-plugin-transform-vue-inline-template-next
 
 #### 介绍
 转换内联vue template 模板 Babel 插件，外部依赖vue-template-compiler、vue-template-es2015-compiler，使用时必须根据不同的vue版本安装对应的vue-template-compiler、vue-template-es2015-compiler。
