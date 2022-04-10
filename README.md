@@ -7,7 +7,7 @@
 #### 安装教程
 
 ```
-1.  npm install -D babel-plugin-transform-vue-template
+1.  npm install -D @babel/transform-vue-inline-template
 ```
 
 #### 使用说明

@@ -8,3 +8,4 @@ docs
 .github
 .vscode
 TODOS
+babel.config.js
