@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-transform-vue-inline-template-next",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "transform vue inline template to render function Babel plugin",
   "homepage": "https://github.com/liangdiyuan/babel-plugin-transform-vue-template/",
   "github": "https://github.com/liangdiyuan/babel-plugin-transform-vue-template/",
