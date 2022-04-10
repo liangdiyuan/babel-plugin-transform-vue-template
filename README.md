@@ -15,7 +15,7 @@
 babel 配置
 ```
 {
-     plugins: [[babelPluginTransformVueTemplate]],
+     plugins: [['babel-plugin-transform-vue-inline-template-next']],
 }
 ```
 
@@ -50,6 +50,6 @@ new Vue({
 自定义魔法注释
 ```
 {
-  plugins: [[babelPluginTransformVueTemplate, {flagStr: "自定义魔法注释"}]],
+  plugins: [['babel-plugin-transform-vue-inline-template-next', {flagStr: "自定义魔法注释"}]],
 }
 ```
