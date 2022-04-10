@@ -1,0 +1,10 @@
+build
+test
+*.yml
+*.log
+package-lock.json
+tsconfig.json
+docs
+.github
+.vscode
+TODOS

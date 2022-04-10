@@ -1,13 +1,13 @@
 # babel-plugin-transform-vue-template
 
 #### 介绍
-转换内联vue template 模板 Babel 插件
+转换内联vue template 模板 Babel 插件，外部依赖vue-template-compiler、vue-template-es2015-compiler，使用时必须根据不同的vue版本安装对应的vue-template-compiler、vue-template-es2015-compiler。
 
 
 #### 安装教程
 
 ```
-1.  git clone https://github.com/liangdiyuan/babel-plugin-transform-vue-template.git
+1.  npm install -D babel-plugin-transform-vue-template
 ```
 
 #### 使用说明

@@ -1,4 +1,4 @@
-const babelPluginTransformVueTemplate = require("./src/indes");
+const babelPluginTransformVueTemplate = require("./lib/indes");
 
 module.exports = function (api) {
   api.cache(true);
