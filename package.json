@@ -36,6 +36,14 @@
     "vue-template-compiler": "^2.6.14",
     "vue-template-es2015-compiler": "^1.9.1"
   },
+  "peerDependenciesMeta": {
+    "vue-template-compiler": {
+      "optional": true
+    },
+    "vue-template-es2015-compiler": {
+      "optional": true
+    }
+  },
   "exports": {
     ".": "./lib/index.js",
     "./package.json": "./package.json"

@@ -5,7 +5,7 @@ new Vue({
       age: 18,
     };
   },
-   /** h--- */
+  /** h--- */
   /* h */
   template: `
     <main>
@@ -108,19 +108,3 @@ var b = {
 };
 
 
-[
-  function _staticRender1(_h, _vm) {
-    var _vm = this;
-    var _h = _vm.$createElement;
-    var _c = _vm._self._c || _h;
-    return _c("section", [_c("p", [_vm._v("Static component, probably")])]);
-  },
-  function _staticRender2(_h, _vm) {
-    var _vm = this;
-    var _h = _vm.$createElement;
-    var _c = _vm._self._c || _h;
-    return _c("section", [
-      _c("p", [_vm._v("Static component, probably again")]),
-    ]);
-  },
-]
