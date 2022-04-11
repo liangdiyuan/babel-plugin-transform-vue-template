@@ -13,10 +13,22 @@ new Vue({
   tes: {}
 });
 var a = {
-  /* ignore */
-  template: `
-      <div @click="testFn" :test="test2">{{test}}</div>
-    `
+  render: function _render0() {
+    var _vm = this;
+
+    var _h = _vm.$createElement;
+
+    var _c = _vm._self._c || _h;
+
+    return _c('div', {
+      attrs: {
+        "test": _vm.test2
+      },
+      on: {
+        "click": _vm.testFn
+      }
+    }, [_vm._v(_vm._s(_vm.test))]);
+  }
 };
 var c = {
   /* custom ignore1 */
@@ -26,12 +38,33 @@ var c = {
 }; // ignore
 
 var e = {
-  template: `
-    <div @click="testFn" :test="test2">{{test}}</div>
-  `
+  render: function _render1() {
+    var _vm = this;
+
+    var _h = _vm.$createElement;
+
+    var _c = _vm._self._c || _h;
+
+    return _c('div', {
+      attrs: {
+        "test": _vm.test2
+      },
+      on: {
+        "click": _vm.testFn
+      }
+    }, [_vm._v(_vm._s(_vm.test))]);
+  }
 };
 var d = {
-  template: ``
+  render: function _render2() {
+    var _vm = this;
+
+    var _h = _vm.$createElement;
+
+    var _c = _vm._self._c || _h;
+
+    return _c("div");
+  }
 };
 var template = `
 <div @click="testFn" :test="test2">{{test}}</div>
