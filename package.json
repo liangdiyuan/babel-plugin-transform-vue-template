@@ -6,7 +6,7 @@
   "github": "https://github.com/liangdiyuan/babel-plugin-transform-vue-template/",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "babel ./test/index.js -o ./build/index.js"
+    "test": "babel test -d build"
   },
   "keywords": [
     "vue",
