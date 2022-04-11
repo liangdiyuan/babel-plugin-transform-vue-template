@@ -6,14 +6,14 @@
 
 #### 安装教程
 
-```
+```bash
 1.  npm install -D babel-plugin-transform-vue-inline-template-next
 ```
 
 #### 使用说明
 
 babel 配置
-```
+```js
 {
      plugins: [['babel-plugin-transform-vue-inline-template-next']],
 }
@@ -23,7 +23,7 @@ babel 配置
 
 
 代码示例
-```
+```js
 new Vue({
   el: "#app",
   data: function () {
@@ -67,7 +67,7 @@ var test = {
 }
 ```
 编译后的代码
-```
+```js
 new Vue({
   el: "#app",
   data: function data() {
@@ -150,7 +150,7 @@ var test = {
 ```
 
 自定义魔法注释
-```
+```js
 // flagStr 标记编译，ignoreFlagStr标记忽略编译，只有开启全量编译ignoreFlagStr才有效
 {
   plugins: [['babel-plugin-transform-vue-inline-template-next', {flagStr: "自定义魔法注释"， ignoreFlagStr: "custom ignore1"}]],
@@ -160,7 +160,7 @@ var test = {
 
 全量编译会忽略flagStr魔法注释，所有的vue内联都会编译
 
-```
+```js
 // compileAll 
 {
   plugins: [['babel-plugin-transform-vue-inline-template-next', {compileAll: true}]],
@@ -169,7 +169,7 @@ var test = {
 
 可以用过魔法注释/* ignore1 */忽略编译
 
-```
+```js
 new Vue({
   el: "#app",
   data: function () {
