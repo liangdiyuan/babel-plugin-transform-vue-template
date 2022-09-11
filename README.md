@@ -188,7 +188,7 @@ var test = {
 // flagStr 标记编译，ignoreFlagStr标记忽略编译，只有开启全量编译ignoreFlagStr才有效
 {
   plugins: [['babel-plugin-transform-vue-inline-template-next', {
-      flagStr: "custom h"， 
+      flagStr: "custom h",
       ignoreFlagStr: "custom ignore1"
     }
   ]],
