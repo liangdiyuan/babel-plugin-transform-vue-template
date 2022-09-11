@@ -22,9 +22,9 @@ babel 配置
 {
      plugins: [
       ['babel-plugin-transform-vue-inline-template-next', {
-          flagStr: "h",
-          compileAll: false,
-          ignoreFlagStr: "ignore",
+          flagStr: "h", // 标记编译魔法注释，全量编译不开启时，在代码中添加该魔法注释，将编译代码
+          compileAll: false, // 是否开启全量编译
+          ignoreFlagStr: "ignore", // 忽略编译魔法注释，全量编译开启时，在代码中添加该魔法注释，将忽略编译代码
           vueTemplateCompilerOpts: {  // vue-template-compile 配置
             whitespace: "condense",
             pad: "line",
@@ -40,7 +40,7 @@ babel 配置
 }
 ```
 
-在 vue 的内联模板 template 上方加上魔法注释 /_ h _/，打包时便会识别到编译成 render 函数。
+在 vue 的内联模板 template 上方加上魔法注释 /* h */，打包时便会识别到编译成 render 函数。
 
 代码示例
 
@@ -187,7 +187,11 @@ var test = {
 ```js
 // flagStr 标记编译，ignoreFlagStr标记忽略编译，只有开启全量编译ignoreFlagStr才有效
 {
-  plugins: [['babel-plugin-transform-vue-inline-template-next', {flagStr: "自定义魔法注释"， ignoreFlagStr: "custom ignore1"}]],
+  plugins: [['babel-plugin-transform-vue-inline-template-next', {
+      flagStr: "custom h"， 
+      ignoreFlagStr: "custom ignore1"
+    }
+  ]],
 }
 ```
 
@@ -196,11 +200,13 @@ var test = {
 ```js
 // compileAll
 {
-  plugins: [['babel-plugin-transform-vue-inline-template-next', {compileAll: true}]],
+  plugins: [['babel-plugin-transform-vue-inline-template-next',
+   {compileAll: true}
+  ]],
 }
 ```
 
-可以用过魔法注释/_ ignore1 _/忽略编译
+可以用过魔法注释/* ignore1 */忽略编译
 
 ```js
 new Vue({
